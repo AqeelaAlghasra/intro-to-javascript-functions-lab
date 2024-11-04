@@ -169,8 +169,43 @@ Example: convertTemperature(32, 'F') should return 0 (Celsius).
 Complete the exercise in the space below:
 */
 
-const =(temp,str)=> {
-  
+const convertTemperature=(temp,str)=> {
+  if (str=='C')
+    return temp-32 /1.8 
+  else{
+     return temp*(9/5)+32 
+
+  }
 }
 
 console.log('Exercise 8 Result:', convertTemperature(32, "C"));
+
+
+/*
+Exercise 9: basicCalculator()
+
+Create a function named basicCalculator. 
+It should take three arguments: two numbers and a string representing 
+an operation ('add', 'subtract', 'multiply', 'divide'). 
+Perform the provided operation on the two numbers. 
+In operations where the order of numbers is important, 
+treat the first parameter as the first operand and the 
+second parameter as the second operand.
+
+Example: basicCalculator(10, 5, 'subtract') should return 5.
+
+Complete the exercise in the space below:
+*/
+
+const basicCalculator=(numA,numB,str)=>{
+  if ('Add')
+    return numA+numB
+  else if ('subtract')
+    return numA-numB
+  else if ('multiply')
+    return numA*numB
+  else if ('divide')
+    return numA/numB
+}
+
+console.log('Exercise 9 Result:', basicCalculator(10, 5, "subtract"));
