@@ -259,7 +259,7 @@ Complete the exercise in the space below:
 
 const createUsername = (fName,lName)=>{
   let sum= lName.length +fName.length 
-  return `${fName.substring(3)}${lName.substring(3)} ${sum}`
+  return `${fName.substring(0,3)}${lName.substring(0,3)}${sum}`
 
 }
 
